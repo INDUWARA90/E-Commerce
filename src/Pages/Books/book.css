@@ -1,0 +1,20 @@
+
+
+.conatiner-search{
+    margin-top: 100px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: auto auto;
+    gap: 10px;
+}
+
+.conatiner-books{
+    margin-top: 50px;
+    margin-bottom: 100px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: auto auto auto auto auto;
+ 
+}

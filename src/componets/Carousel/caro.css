@@ -1,0 +1,13 @@
+
+.B-image{
+    width: 220px;
+}
+.carousel-indicators,
+.carousel-control-prev-icon,
+.carousel-control-next-icon{
+    display:none;
+}
+
+.carousel {
+   width: 350px;
+}

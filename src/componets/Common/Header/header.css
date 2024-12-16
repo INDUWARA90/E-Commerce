@@ -1,0 +1,14 @@
+
+
+.cart-icon{
+    cursor: pointer;
+}
+
+@media (max-width:959px) {
+
+    .cart-icon{
+        margin-bottom: 10px;
+    }
+
+    
+}
