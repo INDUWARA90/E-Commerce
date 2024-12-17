@@ -9,6 +9,7 @@ import img05 from '../../assets/avatar.png';
 import img06 from '../../assets/user-interface.png';
 
 import { productArray } from "../../Data/Products";
+import PreviewCard from '../../componets/B-Card/PreviewCard';
 
 
 function Home() {
@@ -92,11 +93,13 @@ function Home() {
 
             <div className='conatiner-book'>
 
+
                 {
-                    productArray.map((object, key) => {
-                        return <BCard name={object.productName} price={object.price} image={object.image} key={key} Book={object}/>;
+                    productArray.map((obj, i) => {
+                        return <PreviewCard product={obj} key={i} />
                     })
                 }
+
 
             </div>
 
@@ -122,8 +125,8 @@ function Home() {
             <div className='conatiner-book mb-5'>
 
                 {
-                    productArray.map((object, key) => {
-                        return <BCard name={object.productName} price={object.price} image={object.image} key={key} Book={object}/>;
+                    productArray.map((obj, i) => {
+                        return <PreviewCard product={obj} key={i} />
                     })
                 }
 

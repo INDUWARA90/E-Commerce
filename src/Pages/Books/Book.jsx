@@ -1,51 +1,56 @@
-import React from 'react'
-import { useState } from 'react';
-import './book.css'
-
+import React, { useState } from 'react';
+import './book.css';
 import BCard from '../../componets/B-Card/BCard'
-import { productArray } from "../../Data/Products";
+import { productArray } from "../../Data/Products"
+import { addToCart, getCart, getTotal, removeFromCart } from '../../Data/cart';
+
+import CartProduct from '../../Cart/CartProduct'
 
 function Book() {
+  const [cart, setCart] = useState(getCart()); // Initialize cart state from the cart module
 
+  // Function to add product to the cart and update the state
+  const handleAddToCart = (product) => {
+    addToCart(product); // Add product to the cart
+    setCart(getCart()); // Update the local state (cart) with the modified cart
+    
+  };
 
-    const [value, setValue] = useState('');
-
-
-    function handelClick() {
-
-        console.log(value);
-        productArray.forEach((object) => {
-            if ((object.productName == value)) {
-                    console.log(true);
-            }
-        });
-
-
-    }
-
+  // Function to remove a product from the cart and update the state
+  const handleRemoveFromCart = (productId) => {
+    removeFromCart(productId); // Remove the product by its ID
+    setCart(getCart()); // Update the local state (cart) with the modified cart
+  };
 
   return (
-    <div className='container'>
+    <div className="container">
+      {/* Search Section */}
+      <div className="container-search">
+        <input
+          type="text"
+          placeholder="Search here..."
+        />
+        <button>Search</button>
+      </div>
 
-            <div className='conatiner-search'>
-                <input
-                    type="text"
-                    value={value}
-                    onChange={(e) => { setValue(e.target.value) }}
-                    placeholder='Search here...'
+      {/* Book Section */}
+      <div className="container-books">
+        {productArray.map((object, i) => (
+          <BCard
+            id={object.id}
+            name={object.productName}
+            price={object.price}
+            image={object.image}
+            key={i}
+            quantity={object.quantity}
+            addToCart={handleAddToCart} // Pass the handleAddToCart function to BCard
+            product={object}
+          />
+        ))}
+      </div>
 
-                />
-                <button onClick={handelClick}>Search</button>
-            </div>
-
-            <div className=' conatiner-books'>
-                {productArray.map(function (object, i) {
-                    return <BCard name={object.productName} price={object.price} image={object.image} key={i} Book={object} quantity={object.quantity}/>;
-                })}
-            </div>
-
-        </div>
-  )
+    </div>
+  );
 }
 
-export default Book
+export default Book;

@@ -23,6 +23,7 @@ function Header() {
             <li><Link to='/about' className="nav-link px-2 link-body-emphasis">About Us</Link></li>
             <li><Link to='/contact' className="nav-link px-2 link-body-emphasis">Contact Us</Link></li>
           </ul>
+          
 
           <Link to='/cart'>
           <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" className="bi bi-cart me-3 cart-icon" viewBox="0 0 16 16">
