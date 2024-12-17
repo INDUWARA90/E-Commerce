@@ -40,7 +40,7 @@ function Book() {
 
             <div className=' conatiner-books'>
                 {productArray.map(function (object, i) {
-                    return <BCard name={object.productName} price={object.price} image={object.image} key={i} />;
+                    return <BCard name={object.productName} price={object.price} image={object.image} key={i} Book={object} quantity={object.quantity}/>;
                 })}
             </div>
 

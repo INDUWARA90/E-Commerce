@@ -94,7 +94,7 @@ function Home() {
 
                 {
                     productArray.map((object, key) => {
-                        return <BCard name={object.productName} price={object.price} image={object.image} key={key} />;
+                        return <BCard name={object.productName} price={object.price} image={object.image} key={key} Book={object}/>;
                     })
                 }
 
@@ -123,7 +123,7 @@ function Home() {
 
                 {
                     productArray.map((object, key) => {
-                        return <BCard name={object.productName} price={object.price} image={object.image} key={key} />;
+                        return <BCard name={object.productName} price={object.price} image={object.image} key={key} Book={object}/>;
                     })
                 }
 

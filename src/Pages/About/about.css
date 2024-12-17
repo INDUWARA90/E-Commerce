@@ -1,0 +1,23 @@
+
+
+.header-image{
+    display: grid;
+    align-items: center;
+    justify-content: space-between;
+    grid-template-columns: auto auto auto;
+}
+
+.about-header-images{
+    width: 200px;
+}
+
+.container-info{
+    background-color: rebeccapurple;
+    display: grid;
+    align-items: center;
+    justify-content: space-between;
+    grid-template-columns: auto auto;
+    gap: 15px;
+    padding: 25px;
+    border-radius: 5px;
+}
