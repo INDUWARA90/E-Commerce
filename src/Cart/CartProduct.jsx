@@ -24,13 +24,21 @@ function CartProduct({ product, onUpdateCart }) {
     <div className="cart-product">
       <img src={product.image} alt={product.productName} className="cart-product-img" />
       <div className="cart-product-details">
-        <h5>{product.productName}</h5>
-        <p>Rs. {product.price}</p>
+        <h5>{product.name}</h5>
+        <p className='mt-3'> Rs. {product.price}</p>
         <p>Quantity: {product.quantity}</p>
       </div>
-      <button onClick={() => handleIncrementQuantity(product.id)}>+</button>
-      <button onClick={() => handleDecrementQuantity(product.id)}>-</button>
-      <button onClick={() => handleDeleteProduct(product.id)}>Delete Product</button>
+
+      <div className='button-container'>
+
+        <div className='qty-buttons mb-2'>
+        <button className='plus-button' onClick={() => handleIncrementQuantity(product.id)}>+</button>
+        <button className='less-button'onClick={() => handleDecrementQuantity(product.id)}>-</button>
+        </div>
+        <button className='delete-button' onClick={() => handleDeleteProduct(product.id)}>Delete Product</button>
+
+      </div>
+
     </div>
   );
 }

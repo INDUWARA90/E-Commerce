@@ -35,10 +35,10 @@ function Book() {
 
       {/* Book Section */}
       <div className="container-books">
-        {productArray.map((object, i) => (
+        {productArray.map((object, i) => ( 
           <BCard
             id={object.id}
-            name={object.productName}
+            name={object.name}
             price={object.price}
             image={object.image}
             key={i}

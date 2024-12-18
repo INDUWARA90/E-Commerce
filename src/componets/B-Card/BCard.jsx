@@ -3,8 +3,9 @@ import './card.css'; // Assuming the correct path to CSS
 
 function BCard({ id, name, price, image, addToCart,product}) {
   // Function that gets triggered when the "Add to Cart" button is clicked
+
   const handleAddToCart = () => {
-    addToCart({ id, productName: name, price, image, quantity: 1 }); // Pass unique `id` along with other details
+    addToCart({ id,name, price, image, quantity: 1 }); 
   };
 
   return (

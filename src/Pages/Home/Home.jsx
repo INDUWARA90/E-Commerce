@@ -8,8 +8,9 @@ import img01 from '../../assets/HP01.jpg';
 import img05 from '../../assets/avatar.png';
 import img06 from '../../assets/user-interface.png';
 
-import { productArray } from "../../Data/Products";
+import { featuredArray, newArrival, productArray } from "../../Data/Products";
 import PreviewCard from '../../componets/B-Card/PreviewCard';
+
 
 
 function Home() {
@@ -95,7 +96,7 @@ function Home() {
 
 
                 {
-                    productArray.map((obj, i) => {
+                    featuredArray.map((obj, i) => {
                         return <PreviewCard product={obj} key={i} />
                     })
                 }
@@ -125,7 +126,7 @@ function Home() {
             <div className='conatiner-book mb-5'>
 
                 {
-                    productArray.map((obj, i) => {
+                    newArrival.map((obj, i) => {
                         return <PreviewCard product={obj} key={i} />
                     })
                 }

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { getCart, getTotal, clearCart } from '../Data/cart'; // Import necessary cart functions
 import CartProduct from './CartProduct';
+import './cartcontainer.css'
 
 function BookStore() {
   const [cart, setCart] = useState(getCart());
@@ -25,14 +26,13 @@ function BookStore() {
   }
 
   return (
-    <div>
-      <h1>Book Store</h1>
+    <div className='container mb-5'>
+      <h1 className='text-center mb-5'>Products On The Cart</h1>
 
       <div>
-        <h2>Cart</h2>
         {/* Check if there are items in the cart */}
         {cart.length === 0 ? (
-          <p>Your cart is empty.</p>
+          <h5 className='text-center'>Your cart is empty.</h5>
         ) : (
           <div>
             {/* Loop through cart items and render CartProduct for each item */}
@@ -45,12 +45,19 @@ function BookStore() {
             ))}
           </div>
         )}
-        <p>Total: Rs.{getTotal()}</p>
+        
       </div>
 
-      {/* Clear Cart Button */}
+      <div className='text-center m-5'>
+          <h3>Total:<span className='price'> Rs.{getTotal()}</span></h3>        
+      </div>
+
+      {/* Clear Cart & Checkout Button */}
+      <div className='buttons-container'>
       <button onClick={handleClearCart}>Clear Cart</button>
       <button onClick={handleCheckout}>Checkout</button>
+      </div>
+     
     </div>
   );
 }

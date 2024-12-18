@@ -4,7 +4,7 @@ function Footer() {
     return (
         <>
             <div className="container mb-0">
-                <footer className="py-5">
+                <footer className="">
                     <div className="row">
                         <div className="col-6 col-md-2 mb-3">
                             <h5>Categories</h5>

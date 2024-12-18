@@ -1,0 +1,8 @@
+
+.buttons-container{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: auto auto;
+    gap: 10px;
+}
