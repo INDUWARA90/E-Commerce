@@ -6,3 +6,27 @@
     grid-template-columns: auto auto;
     gap: 10px;
 }
+
+.container-card-outer{
+    margin-bottom: 100px;   
+}
+
+
+.clear-btn,
+.checkout-btn{
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+}
+
+.clear-btn{
+    background-color: red;
+    color: white;
+    font-weight: bold;
+}
+
+.checkout-btn{
+    background-color: rgb(160, 233, 51);
+    color: white;
+    font-weight: bold;
+}

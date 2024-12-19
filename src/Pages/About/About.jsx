@@ -1,12 +1,19 @@
 import React from 'react'
 import './about.css'
 import test from '../../assets/HP01.jpg'
+import Member from '../../componets/Member/Member'
+import member from '../../Data/member'
+
+import about01 from '../../assets/about01.jpg'
+import about02 from '../../assets/about02.jpg'
+import about03 from '../../assets/about03.jpg'
+
 
 
 function About() {
     return (
         <>
-            <div className='mt-5 mb-5 container'>
+            <div className='mt-5 container container-about-outer'>
 
                 <div className='header-containre'>
 
@@ -21,9 +28,9 @@ function About() {
 
                 <div className='header-image mt-5'>
 
-                    <img src={test} alt="..." className='about-header-images' />
-                    <img src={test} alt="..." className='about-header-images' />
-                    <img src={test} alt="..." className='about-header-images' />
+                    <img src={about01} alt="..." className='about-header-images' />
+                    <img src={about02} alt="..." className='about-header-images' />
+                    <img src={about03} alt="..." className='about-header-images' />
 
                 </div>
 
@@ -47,8 +54,17 @@ function About() {
 
 
                 <div className='partners-conatiner mt-5'>
-                    <h6 className='text-center'>OUR PARTNERS</h6>
-                    <h3 className='text-center'>Our International Relationships</h3>
+
+                    <h2 className='text-center'>Meet Our Team</h2>
+                    <div className='conatiner-team-member'>
+                            {
+                                  member.map((obj,i)=>{
+                                    return <Member  member={obj} key={i}/>
+                                  }) 
+                            }
+                            
+                    </div>
+
                   
                 </div>
 

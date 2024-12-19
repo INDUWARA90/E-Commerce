@@ -1,7 +1,6 @@
 import React from 'react'
 import './home.css'
 import { Link } from 'react-router-dom';
-import BCard from '../../componets/B-Card/BCard'
 import Caro from '../../componets/Carousel/Caro'
 
 import img01 from '../../assets/HP01.jpg';
@@ -15,7 +14,7 @@ import PreviewCard from '../../componets/B-Card/PreviewCard';
 
 function Home() {
     return (
-        <>
+        <div className='home-container-outer'>
             {/*  */}
             <section className='home-heading-section'>
 
@@ -121,7 +120,7 @@ function Home() {
 
 
             {/* New Arrival Books */}
-            <h1 className='text-center '>New Arrival</h1>
+            <h1 className='text-center'>New Arrival</h1>
 
             <div className='conatiner-book mb-5'>
 
@@ -134,7 +133,7 @@ function Home() {
             </div>
 
 
-        </>
+        </div>
     )
 }
 

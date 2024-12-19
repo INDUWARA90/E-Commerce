@@ -12,7 +12,6 @@ import CartContainer from './Cart/CartContainer';
 import Checkout from './Cart/Checkout';
 
 
-
 function App() {
 
 
@@ -30,7 +29,6 @@ function App() {
             <Route path='/contact' element={<Conatct />} />
             <Route path='/cart' element={<CartContainer />} />
             <Route path='/checkout' element={<Checkout />} />
-            
 
 
           </Routes>

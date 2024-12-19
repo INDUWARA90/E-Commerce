@@ -1,4 +1,6 @@
-
+.container-about-outer{
+    margin-bottom: 100px;
+}
 
 .header-image{
     display: grid;
@@ -8,7 +10,8 @@
 }
 
 .about-header-images{
-    width: 200px;
+    width: 300px;
+    border-radius: 8px;
 }
 
 .container-info{
@@ -20,4 +23,13 @@
     gap: 15px;
     padding: 25px;
     border-radius: 5px;
+}
+
+
+.conatiner-team-member{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: auto auto;
+    margin-top: 50px;
 }

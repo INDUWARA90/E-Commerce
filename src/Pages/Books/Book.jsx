@@ -29,8 +29,9 @@ function Book() {
         <input
           type="text"
           placeholder="Search here..."
+          className='search-box'
         />
-        <button>Search</button>
+        <button className='search-btn'>Search</button>
       </div>
 
       {/* Book Section */}

@@ -4,6 +4,9 @@ body{
     padding: 0;
 }
 
+.home-container-outer{
+    margin-bottom: 100px;
+}
 
 .home-container{
     padding-top: 2rem;

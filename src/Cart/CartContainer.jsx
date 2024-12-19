@@ -26,7 +26,7 @@ function BookStore() {
   }
 
   return (
-    <div className='container mb-5'>
+    <div className='container container-card-outer'>
       <h1 className='text-center mb-5'>Products On The Cart</h1>
 
       <div>
@@ -54,8 +54,8 @@ function BookStore() {
 
       {/* Clear Cart & Checkout Button */}
       <div className='buttons-container'>
-      <button onClick={handleClearCart}>Clear Cart</button>
-      <button onClick={handleCheckout}>Checkout</button>
+      <button onClick={handleClearCart} className='clear-btn'>Clear Cart</button>
+      <button onClick={handleCheckout}  className='checkout-btn'>Checkout</button>
       </div>
      
     </div>
