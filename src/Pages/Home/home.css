@@ -89,3 +89,19 @@ body{
 .discount-book{
     width: 220px;
 }
+
+
+@media (max-width: 1064px) {
+    .home-container{
+       margin-left: 100px;
+    }
+    .container-discount-info{
+        gap: 15px;
+    }
+}
+
+
+
+@media (max-width: 893px) {
+    
+}

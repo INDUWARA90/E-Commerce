@@ -19,7 +19,7 @@ function About() {
 
                     <h6 className='text-center'>Who We Are</h6>
                     <h3 className='text-center'>Discover Our Journey, Vision, and Team</h3>
-                    <p className='text-center mt-3'>
+                    <p className='text-center mt-3 ' style={{textAlign:'justify'}}>
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere magni ab ad temporibus in, eum animi rem illo neque quas repudiandae! Mollitia, inventore repudiandae maiores accusamus dolorem excepturi quisquam. Accusamus!
                         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse quidem quod optio soluta assumenda accusantium ipsum culpa, dolorum numquam asperiores, quisquam quae atque ea laboriosam! Voluptatem nobis repudiandae nam reiciendis?
                         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde facilis maiores quod ducimus iusto ut tempora provident molestias, ab illo! Animi sequi delectus aspernatur autem, cupiditate quae maxime iure deleniti.

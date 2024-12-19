@@ -33,3 +33,31 @@
     grid-template-columns: auto auto;
     margin-top: 50px;
 }
+
+
+@media (max-width: 999px) {
+    .header-image{
+        align-items: center;
+        justify-content: center;
+        grid-template-columns: auto auto;
+        gap: 20px;
+    }
+    .container-info{
+        grid-template-columns: auto;
+    }
+}
+
+@media (max-width: 639px) {
+    .about-header-images{
+        width: 200px;
+    }
+
+}
+
+
+@media (max-width: 433px) {
+    .header-image{
+        grid-template-columns: auto ;
+        gap: 20px;
+    }
+}
