@@ -103,5 +103,101 @@ body{
 
 
 @media (max-width: 893px) {
+    .conatiner-book{
+        grid-template-columns: auto auto auto;
+    }
+    .discount-book{
+        width: 190px;
+    }
+
+    .image-container-discount-description p{
+        max-width: 500px;
+        margin-bottom: 10px;
+    }
+
+ 
+}
+
+@media (max-width: 727px) {
+    .container-icon-grid{
+        grid-template-columns: auto auto ;
+        gap: 30px;
+    }
+
+    .home-title h1{
+            font-size: small;
+    }
+ 
+}
+
+@media (max-width: 689px) {
+    .container-icon-grid{
+        grid-template-columns: auto auto ;
+        gap: 30px;
+    }
+    .conatiner-book{
+        grid-template-columns: auto auto;
+    }
     
+    .discount-book{
+        width: 190px;
+    }
+
+    .image-container-discount-description p{
+        max-width: 380px;
+        margin-bottom: 10px;
+    }
+    .home-title{
+        font-size: x-large;
+    }
+
+    .home-container{
+        margin-left: 80px;
+     }
+
+     .discount-book{
+        width: 130px;
+     }
+
+     .image-container-discount-description p{
+        max-width: 400px;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 551px) {
+    .discount-book{
+        display: none;
+     }
+}
+
+@media (max-width: 445px) {
+    .home-container{
+        margin-left: 30px;
+     }
+     .P-P{
+        font-size: small;
+     }
+}
+
+@media (max-width: 387px) {
+    .home-container{
+        text-align: center;
+     }
+
+     .home-container{
+        margin-left: 45px;
+     }
+}
+
+@media (max-width: 349px) {
+    .P-P{
+        font-size: x-small;
+     }
+}
+
+@media (max-width: 287px) {
+    .P-P{
+        font-size: xx-small;
+     }
 }

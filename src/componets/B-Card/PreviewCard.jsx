@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import BookModal from '../ProductDetail/Detail';
-
-
+import './card.css'
 function PreviewCard({ product }) {
 
     const [isModalOpen, setIsModalOpen] = useState(false); // State for modal visibility

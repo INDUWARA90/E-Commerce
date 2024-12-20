@@ -11,3 +11,34 @@
 .carousel {
    width: 350px;
 }
+
+@media (max-width: 689px) {
+    .carousel {
+        width: 250px;
+     }
+
+     .B-image{
+        width: 190px;
+    }
+}
+
+@media (max-width: 445px) {
+    .carousel {
+        width: 200px;
+     }
+
+     .B-image{
+        width: 150px;
+    }
+}
+
+
+@media (max-width: 387px) {
+    .carousel {
+      display: none;
+     }
+
+     .B-image{
+        display: none;
+    }
+}

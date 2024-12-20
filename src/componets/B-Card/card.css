@@ -31,4 +31,20 @@ body{
 
 .card-img-top:hover{
     cursor: pointer;
-}        
+}
+
+
+
+@media (max-width: 445px) {
+    .card-container{
+        width: 11rem;
+    }
+ }
+ 
+
+@media (max-width: 326px) {
+    .card-container{
+        width: 9rem;
+    }
+ }
+ 
