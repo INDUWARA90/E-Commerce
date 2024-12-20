@@ -1,8 +1,17 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './contact.css'
 import ContactForm from '../../componets/ContactForm/ContactForm'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+
 
 function Conatct() {
+
+    useEffect(() => {
+        AOS.init();
+    }, [])
+
     return (
         <div className='container  mt-5 conatiner-contact-outer' >
             <div className='conatiner-conatct'>
@@ -18,7 +27,7 @@ function Conatct() {
 
                 <div className='conatiner-info mt-4'>
 
-                    <div className='left'>
+                    <div className='left'  data-aos="fade-right">
 
                         <div className='boder-box'>
                             <h5>Address</h5>

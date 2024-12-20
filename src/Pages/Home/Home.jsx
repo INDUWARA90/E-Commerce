@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './home.css'
 import { Link } from 'react-router-dom';
 import Caro from '../../componets/Carousel/Caro'
@@ -11,8 +11,18 @@ import { featuredArray, newArrival } from "../../Data/Products";
 import PreviewCard from '../../componets/B-Card/PreviewCard';
 
 
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+
+
 
 function Home() {
+
+    useEffect(() => {
+        AOS.init();
+    }, [])
+
     return (
         <div className='home-container-outer'>
             {/*  */}
@@ -20,7 +30,7 @@ function Home() {
 
                 <div className="home-container mb-5">
 
-                    <div className="home-data">
+                    <div className="home-data" data-aos="fade-down">
                         <h1 className='home-title'>
                             Browse & <br />
                             Select Your Choices
@@ -35,7 +45,10 @@ function Home() {
                     </div>
 
                     {/* carouel */}
-                    <Caro />
+                    <div data-aos="fade-left">
+                        <Caro />
+                    </div>
+                    
 
                 </div>
 
@@ -91,7 +104,12 @@ function Home() {
             {/* Featured Books */}
             <h1 className='text-center '>Featured Books</h1>
 
-            <div className='conatiner-book'>
+            <div className='conatiner-book'
+            
+            data-aos="fade-up"
+            data-aos-anchor-placement="center-bottom"
+            
+            >
 
 
                 {
@@ -106,10 +124,14 @@ function Home() {
             {/* discount section */}
             <section className='container-discount-info'>
 
-                <div className='image-container-discount'>
+                <div className='image-container-discount'
+                data-aos="fade-right"
+                >
                     <img src={img01} alt="..." className='discount-book' />
                 </div>
-                <div className='image-container-discount-description'>
+                <div className='image-container-discount-description'
+                data-aos="fade-left"
+                >
                     <h1>Up To 50% Discount</h1>
                     <p>Take advantage of the discount days we have for you,buy books from your favorite writters
                         ,the more you buy,the more discount we have for you.</p>
@@ -122,7 +144,12 @@ function Home() {
             {/* New Arrival Books */}
             <h1 className='text-center'>New Arrival</h1>
 
-            <div className='conatiner-book mb-5'>
+            <div className='conatiner-book mb-5'
+            
+            data-aos="fade-up"
+            data-aos-anchor-placement="center-bottom"
+            
+            >
 
                 {
                     newArrival.map((obj, i) => {

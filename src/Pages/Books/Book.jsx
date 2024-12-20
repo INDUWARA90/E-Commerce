@@ -1,19 +1,27 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './book.css';
 import BCard from '../../componets/B-Card/BCard'
 import { productArray } from "../../Data/Products"
-import { addToCart, getCart, getTotal, removeFromCart } from '../../Data/cart';
+import { addToCart, getCart, removeFromCart } from '../../Data/cart';
 
-import CartProduct from '../../Cart/CartProduct'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+
 
 function Book() {
+
+  useEffect(() => {
+    AOS.init();
+  }, [])
+
   const [cart, setCart] = useState(getCart()); // Initialize cart state from the cart module
 
   // Function to add product to the cart and update the state
   const handleAddToCart = (product) => {
     addToCart(product); // Add product to the cart
     setCart(getCart()); // Update the local state (cart) with the modified cart
-    
+
   };
 
   // Function to remove a product from the cart and update the state
@@ -35,8 +43,15 @@ function Book() {
       </div>
 
       {/* Book Section */}
-      <div className="container-books">
-        {productArray.map((object, i) => ( 
+      <div className="container-books"
+      
+      data-aos="fade-zoom-in"
+      data-aos-easing="ease-in-back"
+      data-aos-delay="100"
+      data-aos-offset="0"
+      
+      >
+        {productArray.map((object, i) => (
           <BCard
             id={object.id}
             name={object.name}
