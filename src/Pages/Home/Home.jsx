@@ -7,7 +7,7 @@ import img01 from '../../assets/HP01.jpg';
 import img05 from '../../assets/avatar.png';
 import img06 from '../../assets/user-interface.png';
 
-import { featuredArray, newArrival, productArray } from "../../Data/Products";
+import { featuredArray, newArrival } from "../../Data/Products";
 import PreviewCard from '../../componets/B-Card/PreviewCard';
 
 
@@ -31,7 +31,7 @@ function Home() {
                             writers,explore hundreds of books with all possible,categories,
                             take advantage of the 50% discount and musch more
                         </p>
-                        <button className='Explore-btn'>Explore Now</button>
+                        <Link to='/book'><button className='Explore-btn'>Explore Now</button></Link>
                     </div>
 
                     {/* carouel */}

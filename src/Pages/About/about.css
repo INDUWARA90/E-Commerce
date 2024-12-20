@@ -15,7 +15,9 @@
 }
 
 .container-info{
-    background-color: rebeccapurple;
+   background-color:rgba(239, 242, 237, 0.3);
+   backdrop-filter: blur(15px);
+   box-shadow: 10px 0px 10px rgba(0, 0, 0, 0.3) ;
     display: grid;
     align-items: center;
     justify-content: space-between;
