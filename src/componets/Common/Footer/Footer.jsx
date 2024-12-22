@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 function Footer() {
     return (
@@ -6,26 +7,14 @@ function Footer() {
             <div className="container mb-0">
                 <footer className="">
                     <div className="row">
-                        <div className="col-6 col-md-2 mb-3">
-                            <h5>Categories</h5>
-                            <ul className="nav flex-column">
-                                <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-body-secondary">Fantasy</a></li>
-                                <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-body-secondary">Horror</a></li>
-                                <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-body-secondary">Romance</a></li>
-                                <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-body-secondary">Science fiction</a></li>
-                                <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-body-secondary">Historical</a></li>
-                                <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-body-secondary">Mystery</a></li>
-                                <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-body-secondary">Adventure fiction</a></li>
-                            </ul>
-                        </div>
-
+                        
                         <div className="col-6 col-md-2 mb-3">
                             <h5>Quick Links</h5>
                             <ul className="nav flex-column">
-                                <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-body-secondary">Home</a></li>
-                                <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-body-secondary">About Us</a></li>
-                                <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-body-secondary">Contact Us</a></li>
-                                <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-body-secondary">Books</a></li>
+                                <li className="nav-item mb-2"><Link  to="/"  className="nav-link p-0 text-body-secondary">Home</Link></li>
+                                <li className="nav-item mb-2"><Link  to="/about" className="nav-link p-0 text-body-secondary">About Us</Link></li>
+                                <li className="nav-item mb-2"><Link  to="/contact"className="nav-link p-0 text-body-secondary">Contact Us</Link></li>
+                                <li className="nav-item mb-2"><Link  to="/book" className="nav-link p-0 text-body-secondary">Books</Link></li>
 
                             </ul>
                         </div>
@@ -33,9 +22,8 @@ function Footer() {
                         <div className="col-6 col-md-2 mb-3 ">
                             <h5>Information</h5>
                             <ul className="nav flex-column">
-                                <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-body-secondary">Pricing</a></li>
-                                <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-body-secondary">FAQs</a></li>
-                                <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-body-secondary">Payment Policy</a></li>
+                                <li className="nav-item mb-2"><Link to="/privacy" className="nav-link p-0 text-body-secondary">Privacy Policy</Link></li>
+                                <li className="nav-item mb-2"><Link to="/faq" className="nav-link p-0 text-body-secondary">FAQs</Link></li>
                             </ul>
                         </div>
 
@@ -53,7 +41,7 @@ function Footer() {
                     </div>
 
                     <div className="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
-                        <p>&copy; 2024 Company, Inc. All rights reserved.</p>
+                        <p>&copy; 2024 Tale Time Company, Inc. All rights reserved.</p>
                         <ul className="list-unstyled d-flex">
                             <li className="ms-3"><a className="link-body-emphasis" href="#"><svg className="bi" width="24" height="24"><use /></svg></a></li>
                             <li className="ms-3"><a className="link-body-emphasis" href="#"><svg className="bi" width="24" height="24"><use /></svg></a></li>

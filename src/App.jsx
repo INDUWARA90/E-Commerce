@@ -10,6 +10,8 @@ import About from './Pages/About/About';
 import Conatct from './Pages/Contact Us/Conatct';
 import CartContainer from './Cart/CartContainer';
 import Checkout from './Cart/Checkout';
+import Policy from './Pages/Policy/Policy';
+import FAQs from './Pages/FAQs/FAQs';
 
 
 function App() {
@@ -29,6 +31,8 @@ function App() {
             <Route path='/contact' element={<Conatct />} />
             <Route path='/cart' element={<CartContainer />} />
             <Route path='/checkout' element={<Checkout />} />
+            <Route path='/privacy' element={<Policy />} />
+            <Route path='/faq' element={<FAQs />} />
 
 
           </Routes>

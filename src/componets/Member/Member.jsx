@@ -6,7 +6,7 @@ function Member({member}) {
         <>
 
             <div className="card" style={{width:'18rem',border:'none'}}>
-                <img src={member.image} className="card-img-top" alt="..." />
+                <img src={member.image} className="card-img-top resize-image" alt="..." />
                 <div className="card-body text-center">
                     <h5 className="card-title">{member.name}</h5>
                     <h6 className="card-title">{member.possition}</h6>

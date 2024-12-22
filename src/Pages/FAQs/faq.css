@@ -1,0 +1,23 @@
+
+
+.conatiner-box{
+    display: grid;
+    align-items: center;
+    justify-content: space-around;
+    grid-template-columns: auto auto;
+    gap: 30px;
+}
+
+.outer-container{
+    background-color: rgb(204, 204, 204);
+    border-radius:6px ;
+    padding: 40px;
+}
+
+
+@media (max-width: 768px) {
+    .conatiner-box{
+        grid-template-columns: auto ;
+    
+    }
+}

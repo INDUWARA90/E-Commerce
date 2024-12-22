@@ -1,0 +1,16 @@
+
+
+.link{
+
+    font-size: large;
+    color: black;
+    text-decoration: none;
+}
+
+.link:hover{
+    color: blue;
+}
+
+.fontB{
+    font-weight:600;
+}
