@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { getCart, getTotal, clearCart } from '../Data/cart'; // Import necessary cart functions
 import CartProduct from './CartProduct';
 import './cartcontainer.css'
+import Swal from 'sweetalert2'
 
 function BookStore() {
   const [cart, setCart] = useState(getCart());
@@ -23,6 +24,13 @@ function BookStore() {
       console.log(element);
       
     })
+
+    Swal.fire({
+      icon: "error",
+      title: "Oops...",
+      text: "Currently On Devolpment!",
+    });
+
   }
 
   return (
@@ -38,9 +46,9 @@ function BookStore() {
             {/* Loop through cart items and render CartProduct for each item */}
             {cart.map((item) => (
               <CartProduct
-                key={item.id}  // Ensure each product is uniquely identified by id
-                product={item}  // Pass product details to CartProduct
-                onUpdateCart={handleUpdateCart}  // Pass the update handler to update cart after any changes
+                key={item.id}  
+                product={item} 
+                onUpdateCart={handleUpdateCart} 
               />
             ))}
           </div>

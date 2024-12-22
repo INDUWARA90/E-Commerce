@@ -44,7 +44,7 @@ function Conatct() {
 
                         <div className='boder-box'>
                             <h5>Email</h5>
-                            webadmin@taletime.com
+                            induwaravishwakantha90@gmail.com
                         </div>
                     </div>
 

@@ -1,7 +1,18 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import Swal from 'sweetalert2'
 
 function Footer() {
+
+   const handelClick=()=>{
+    Swal.fire({
+        icon: "error",
+        title: "Oops...",
+        text: "Currently On Devolpment!",
+      });
+  
+    }
+
     return (
         <>
             <div className="container mb-0">
@@ -34,7 +45,7 @@ function Footer() {
                                 <div className="d-flex flex-column flex-sm-row w-100 gap-2">
                                     <label className="visually-hidden">Email address</label>
                                     <input id="newsletter1" type="text" className="form-control" placeholder="Email address" />
-                                    <button className="btn btn-primary" type="button">Subscribe</button>
+                                    <button className="btn btn-primary" type="button" onClick={handelClick}>Subscribe</button>
                                 </div>
                             </form>
                         </div>

@@ -26,9 +26,7 @@ function About() {
                     <h6 className='text-center'>Who We Are</h6>
                     <h3 className='text-center'>Discover Our Journey, Vision, and Team</h3>
                     <p className='text-center mt-3 ' style={{ textAlign: 'justify' }}>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere magni ab ad temporibus in, eum animi rem illo neque quas repudiandae! Mollitia, inventore repudiandae maiores accusamus dolorem excepturi quisquam. Accusamus!
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse quidem quod optio soluta assumenda accusantium ipsum culpa, dolorum numquam asperiores, quisquam quae atque ea laboriosam! Voluptatem nobis repudiandae nam reiciendis?
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde facilis maiores quod ducimus iusto ut tempora provident molestias, ab illo! Animi sequi delectus aspernatur autem, cupiditate quae maxime iure deleniti.
+                    At Tale Time, our journey began with a simple love for books and a vision to make reading more accessible to all. We started as a small online bookshop with a passion for curating stories that inspire and educate. Our vision is to foster a love for reading by offering a wide range of books that spark imagination and knowledge. Behind Tale Time is a dedicated team of book enthusiasts who work together to provide excellent service, recommend exciting reads, and ensure every customer finds their next great story. We’re here to make every reading experience unforgettable.
                     </p>
                 </div>
 
@@ -45,14 +43,14 @@ function About() {
                     <div className='our-Mission'>
                         <h2>Our Mission</h2>
                         <p>
-                            To satisfy the customers by providing quality service based on essential values actively supporting the younger generation of the country to improve their knowledge, attitudes and talents. Work out a plan to meet the challenges faced by the industry, collectively and individually while safeguarding the prestigious name established by Sarasavi Bookshop (Pvt) Ltd as the pioneers of this field
+                        At Tale Time, our mission is to ignite a love for reading by providing easy access to a wide range of books that inspire, educate, and entertain. We are committed to curating a diverse collection that caters to readers of all ages and interests. Through exceptional customer service, fast delivery, and expert recommendations, we aim to create a seamless online shopping experience. Our goal is to make books a part of every reader’s life, fostering a community where stories connect, inspire, and shape the future of readers around the world.
                         </p>
                     </div>
 
                     <div className='our-Vision'>
                         <h2>Our Vision</h2>
                         <p>
-                            To satisfy the customers by providing quality service based on essential values actively supporting the younger generation of the country to improve their knowledge, attitudes and talents. Work out a plan to meet the challenges faced by the industry, collectively and individually while safeguarding the prestigious name established by Sarasavi Bookshop (Pvt) Ltd as the pioneers of this field
+                        At Tale Time, our vision is to create a world where books inspire, educate, and connect people across all walks of life. We strive to be the go-to online bookshop, offering a diverse collection of stories that cater to all tastes and ages. Our goal is to make reading accessible, enjoyable, and transformative for everyone, by providing a seamless shopping experience, expert recommendations, and a vast library of titles. Through our passion for books, we aim to cultivate a lifelong love of reading and foster a global community of book lovers.
                         </p>
                     </div>
 
