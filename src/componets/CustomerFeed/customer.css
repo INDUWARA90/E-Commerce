@@ -1,0 +1,69 @@
+.start-resize{
+    width: 150px;
+}
+
+.card{
+    padding-top: 10px;
+    padding-left: 10px;
+    border-radius: 8px;
+}
+
+
+.image-customer{
+    border-radius: 8px;
+}
+
+@media (max-width: 1400px) {
+    .name{
+        font-size: small;
+    }
+    .feedback{
+        font-size: x-small;
+    }
+
+    .image-customer{
+        width: 450px;
+    }
+    .card{
+        width: 450px;
+    }
+
+}
+
+@media (max-width: 765px) {
+    .container-inner{
+        text-align: center;
+    }
+    .feedback{
+        font-size: small;
+    }
+
+    .image-customer{
+        width: 300px;
+    }
+    .card{
+        width: 300px;
+        padding-top: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+}
+@media (max-width: 563px) {
+    .name{
+        font-size: small;
+    }
+    .feedback{
+        font-size: x-small;
+    }
+
+    .image-customer{
+        width: 200px;
+    }
+    .card{
+        width: 200px;
+    }
+    .start-resize{
+        width: 100px;
+    }
+}

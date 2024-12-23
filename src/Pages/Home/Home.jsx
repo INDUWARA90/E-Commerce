@@ -13,6 +13,8 @@ import PreviewCard from '../../componets/B-Card/PreviewCard';
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import CustomerF from '../../componets/CustomerFeed/CustomerF';
+import customer from '../../Data/customer';
 
 
 
@@ -55,7 +57,7 @@ function Home() {
             </section>
 
             {/*  */}
-            <section className='conatiner-icons'>
+            <section className='conatiner-icons '>
 
                 <div className='container-icon-grid'>
 
@@ -102,7 +104,7 @@ function Home() {
 
 
             {/* Featured Books */}
-            <h1 className='text-center '>Featured Books</h1>
+            <h1 className='text-center'>Featured Books</h1>
 
             <div className='conatiner-book'
             
@@ -158,6 +160,17 @@ function Home() {
                 }
 
             </div>
+
+            <section className='container customer-feedback-section'>
+                <h2 className='text-center'>Customer FeedBack</h2>
+                <div className='conatiner-cus-feedback'>
+                        {
+                            customer.map((customer,key)=>{
+                                return <CustomerF key={key} customer={customer} />
+                            })
+                        }
+                </div>
+            </section>
 
 
         </div>
