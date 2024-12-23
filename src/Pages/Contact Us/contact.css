@@ -105,7 +105,9 @@
         margin-left: auto;
         margin-right: auto;
     }
-
+    .email{
+        font-size: small;
+    }
 }
 
 @media (max-width: 380px) {

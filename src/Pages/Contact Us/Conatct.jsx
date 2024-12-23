@@ -42,7 +42,7 @@ function Conatct() {
                             +94 711304050 / 0112820820
                         </div>
 
-                        <div className='boder-box'>
+                        <div className='boder-box email'>
                             <h5>Email</h5>
                             induwaravishwakantha90@gmail.com
                         </div>

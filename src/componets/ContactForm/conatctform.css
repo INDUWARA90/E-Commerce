@@ -1,5 +1,7 @@
 .form-conatiner {
-    border: 1px solid black;
+    background-color:rgba(239, 242, 237, 0.3);
+    backdrop-filter: blur(15px);
+     box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.3) ;
     padding: 20px;
     border-radius: 8px;
     width: 400px;
@@ -32,11 +34,23 @@ p {
 }
 
 .submit-button {
+    
     width: 120px;
     border-radius: 6px;
     padding: 6px;
     border: none;
+    background-color: #A294F9;
+    font-weight: bold;
+    color: white;
 
+}
+
+.submit-button:hover {
+    color:black;
+}
+
+.submit-button:active {
+    opacity: 0.4;
 }
 
 

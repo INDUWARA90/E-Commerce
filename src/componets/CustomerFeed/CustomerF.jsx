@@ -1,6 +1,5 @@
 import React from 'react'
 import './customer.css'
-import test from '../../assets/members/member01.jpg'
 import star1 from '../../assets/stars/4.5.png'
 import star2 from '../../assets/stars/3.5.png'
 
@@ -19,7 +18,7 @@ function CustomerF({ customer }) {
             <div className="card mb-3 card">
                 <div className="row g-0 container-inner">
                     <div className="col-md-4">
-                        <img src={test} className="img-fluid rounded-start image-customer" alt="..." />
+                        <img src={customer.image} className="img-fluid rounded-start image-customer" alt="..." />
                     </div>
                     <div className="col-md-8">
                         <div className="card-body">

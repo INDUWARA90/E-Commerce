@@ -25,11 +25,17 @@
 
 .search-btn {
     padding: 10px;
-    width: 80px;
+    width: 100px;
     border-radius: 6px;
     border: none;
+    background-color: #A294F9;
+    color: white;
+    font-weight: bold;
 }
 
+.search-btn:hover {
+    color: black;
+}
 
 @media (max-width: 1116px) {
     .container-books {

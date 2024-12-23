@@ -45,7 +45,7 @@ function Footer() {
                                 <div className="d-flex flex-column flex-sm-row w-100 gap-2">
                                     <label className="visually-hidden">Email address</label>
                                     <input id="newsletter1" type="text" className="form-control" placeholder="Email address" />
-                                    <button className="btn btn-primary" type="button" onClick={handelClick}>Subscribe</button>
+                                    <button className="btn " type="button" onClick={handelClick} style={{backgroundColor:'#A294F9',color:'white'}}>Subscribe</button>
                                 </div>
                             </form>
                         </div>

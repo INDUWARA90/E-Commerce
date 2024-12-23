@@ -57,7 +57,7 @@ function Home() {
             </section>
 
             {/*  */}
-            <section className='conatiner-icons '>
+            <section className='container conatiner-icons '>
 
                 <div className='container-icon-grid'>
 
